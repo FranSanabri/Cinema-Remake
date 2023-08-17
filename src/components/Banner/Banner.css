@@ -38,11 +38,12 @@
   color: #fff;
   margin-top: 10px;
   font-family: 'Montserrat', sans-serif; /* Agrega la fuente Montserrat */
+  text-shadow: 3px 4px 4px #000;
 }
 
 @media screen and (max-width: 768px) {
     .viewtrailer {
-      height: 70vh;
+      height: 90vh;
       align-items: flex-start; /* Alinea los elementos en la parte superior */
     }
   
