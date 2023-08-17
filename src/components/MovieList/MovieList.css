@@ -53,6 +53,20 @@ body {
   color: #ccc; /* Cambia el color del texto */
 }
 
+.star-icon {
+    color: #f39c12; /* Color de las estrellas activas */
+    margin-right: 2px;
+  }
+  
+  .inactive {
+    color: #ccc; /* Color de las estrellas inactivas */
+  }
+
+  .movie-release {
+    color: white;
+  }
+  
+
 /* Estilos para pantallas pequeñas */
 @media screen and (max-width: 768px) {
     .movie-item {

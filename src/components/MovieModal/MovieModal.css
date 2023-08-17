@@ -54,6 +54,8 @@
   line-height: 1.4;
 }
 
+
+
 /* Estilos para pantallas pequeñas */
 @media screen and (max-width: 768px) {
   .modal-content {
