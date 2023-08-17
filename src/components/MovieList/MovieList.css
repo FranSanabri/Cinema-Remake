@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+.movie-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background-color: #333;
+  padding: 20px;
+}
+
+.movie-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.movie-item {
+  width: calc(25% - 20px); /* Cuatro elementos por fila con 20px de separación */
+  background-color: #444; /* Color de fondo de las cajas */
+  padding: 10px;
+  border: 1px solid #555;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  transition: transform 0.2s ease-in-out;
+  overflow: hidden;
+  max-width: calc(25% - 20px); /* Para considerar el padding */
+  border-radius: 8px;
+}
+
+.movie-item:hover {
+  transform: translateY(-5px);
+}
+
+.movie-poster {
+  max-width: 100%;
+  height: auto;
+  max-height: 200px; /* Ajusta el tamaño de la imagen según tu preferencia */
+  border-radius: 8px;
+}
+
+.movie-title {
+  font-size: 1.3rem;
+  margin: 10px 0;
+  color: #ddd; /* Cambia el color del título */
+}
+
+.movie-overview {
+  font-size: 1rem;
+  color: #ccc; /* Cambia el color del texto */
+}
+
+/* Estilos para pantallas pequeñas */
+@media screen and (max-width: 768px) {
+    .movie-item {
+      width: calc(50% - 20px); /* Dos elementos por fila con 20px de separación */
+      max-width: calc(50% - 20px); /* Para considerar el padding */
+    }
+  
+    .movie-poster {
+      max-height: 150px; /* Ajusta el tamaño de la imagen según tu preferencia */
+      margin-bottom: 10px;
+    }
+  
+    .movie-title {
+      font-size: 1.2rem;
+      margin: 8px 0;
+    }
+  
+    .movie-overview {
+      font-size: 1rem;
+      color: #ccc;
+    }
+  }

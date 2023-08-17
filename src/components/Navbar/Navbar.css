@@ -1,0 +1,67 @@
+/* Navbar.css */
+.navbar {
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    top: 0;
+    position: fixed;
+    width: 100%;
+    z-index: 100; /* Asegura que el Navbar esté por encima del contenido */
+  }
+  
+  .navbar-title {
+    font-size: 1.5rem;
+  }
+  
+  .navbar-search {
+    display: flex;
+    align-items: center;
+  }
+  
+  .search-input {
+    padding: 8px;
+    border: none;
+    border-radius: 4px;
+    margin-right: 10px;
+  }
+  
+  .filter-select {
+    padding: 6px;
+    border: none;
+    border-radius: 4px;
+    background-color: #444;
+    color: #fff;
+    width: auto; /* Ajusta el ancho automáticamente */
+    margin-right: 50px;
+  }
+  
+  /* Navbar.css */
+@media screen and (max-width: 768px) {
+    .navbar {
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 10px;
+    }
+  
+    .navbar-title {
+      font-size: 1.8rem;
+      margin-bottom: 10px;
+    }
+  
+    .navbar-search {
+      width: 100%;
+    }
+  
+    .search-input {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+  
+    .filter-select {
+      width: 100%;
+      margin-right: 20px;
+    }
+  }

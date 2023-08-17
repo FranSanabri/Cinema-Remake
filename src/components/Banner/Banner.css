@@ -1,0 +1,56 @@
+/* Banner.css */
+
+/* Agrega el enlace a la fuente Montserrat */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap');
+
+.viewtrailer {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  position: relative;
+  text-align: center;
+  z-index: 1;
+}
+
+.boton {
+  background-color: rgba(229, 9, 20, 0.8);
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.boton:hover {
+  background-color: rgba(229, 9, 20, 1);
+}
+
+.text-white {
+  color: #fff;
+  margin-top: 10px;
+  font-family: 'Montserrat', sans-serif; /* Agrega la fuente Montserrat */
+}
+
+@media screen and (max-width: 768px) {
+    .viewtrailer {
+      height: 70vh;
+      align-items: flex-start; /* Alinea los elementos en la parte superior */
+    }
+  
+    .boton {
+      margin-top: 180px; /* Aumenta el margen superior del botón */
+    }
+  
+    .text-white {
+      margin-bottom: 20px; /* Aumenta el margen superior del texto */
+    }
+  }
