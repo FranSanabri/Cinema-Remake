@@ -19,6 +19,7 @@
   .navbar-search {
     display: flex;
     align-items: center;
+    margin-left: 100px;
   }
   
   .search-input {
@@ -37,7 +38,26 @@
     width: auto; /* Ajusta el ancho automáticamente */
     margin-right: 50px;
   }
+
+  .navbar-food {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+  }
   
+  .food-button {
+    background: none;
+    border: none;
+    font-size: 14px;
+    color: #fff;
+    cursor: pointer;
+    text-decoration: underline;
+    margin-right: 20px; /* Ajusta el margen derecho para mover el botón a la izquierda */
+  }
+  
+  .food-button:hover {
+    color: #f39c12;
+  }
   /* Navbar.css */
 @media screen and (max-width: 768px) {
     .navbar {
@@ -53,6 +73,7 @@
   
     .navbar-search {
       width: 100%;
+      margin-left: 0px;
     }
   
     .search-input {
@@ -63,5 +84,6 @@
     .filter-select {
       width: 100%;
       margin-right: 20px;
+      margin-bottom: 13px;
     }
   }
